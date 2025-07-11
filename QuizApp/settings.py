@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'rest_framework.authtoken', # For token authentication
     'app',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
