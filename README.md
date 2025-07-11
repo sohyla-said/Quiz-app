@@ -44,3 +44,13 @@ A full-stack Django web application that allows **teachers** to create quizzes w
    ```bash
    git clone https://github.com/your-username/quiz-system.git
    cd quiz-system
+
+## 🔍 API Documentation
+
+This project includes interactive API documentation using **Swagger** and **ReDoc**:
+
+- [Swagger UI](http://localhost:8000/swagger/) – for testing and exploring endpoints
+- [ReDoc UI](http://localhost:8000/redoc/) – clean, read-only API documentation
+
+> Make sure the Django server is running and you're logged in (if endpoints require authentication).
+
