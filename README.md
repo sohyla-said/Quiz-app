@@ -31,7 +31,7 @@ A full-stack Django web application that allows **teachers** to create quizzes w
 ## ⚙️ Technologies Used
 
 - **Backend:** Django, Django REST Framework
-- **Frontend:** HTML, CSS, Vanilla JavaScript
+- **Frontend:** HTML, CSS, JavaScript
 - **Database:** SQLite (easily switchable to PostgreSQL or MySQL)
 - **Authentication:** Token-based via DRF
 - **Other:** FontAwesome, Fetch API, CSRF protection
@@ -42,8 +42,8 @@ A full-stack Django web application that allows **teachers** to create quizzes w
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/quiz-system.git
-   cd quiz-system
+   git clone https://github.com/your-username/quiz-app.git
+   cd quiz-app
 
 ## 🔍 API Documentation
 
