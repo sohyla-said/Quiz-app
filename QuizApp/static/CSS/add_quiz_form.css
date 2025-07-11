@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #d9dad7;
+  margin: 0;
+  padding: 0;
+  color: #1a2639;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3e4a61;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #d9eaff;
+}
+
+/* Form container */
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #c24d2c;
+  margin-bottom: 1.5rem;
+}
+
+/* Form fields */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #1a2639;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.9rem;
+  background: #c24d2c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background: #be674f;
+}
+
+/* Message paragraph */
+#message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Back link */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #c24d2c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i {
+  margin-right: 5px;
+}

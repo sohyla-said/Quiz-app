@@ -1,0 +1,108 @@
+/* Reset & base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d9dad7;
+  color: #1a2639;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #c24d2c;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3e4a61;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Submission Cards */
+.submission-card {
+  background-color: #fdfdfd;
+  border-left: 5px solid #c24d2c;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.submission-card h3 {
+  margin-top: 0;
+  color: #c24d2c;
+}
+
+.submission-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.submission-card details {
+  margin-top: 1rem;
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+}
+
+.submission-card summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #3e4a61;
+}
+
+/* Answer block */
+.answer {
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #c24d2c;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.03);
+}
+
+.answer p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.answer p strong {
+  color: #555;
+}

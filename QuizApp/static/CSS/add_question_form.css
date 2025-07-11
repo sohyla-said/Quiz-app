@@ -1,0 +1,167 @@
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #d9dad7;
+  margin: 0;
+  padding: 0;
+  color: #1a2639;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #3e4a61;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d9eaff;
+}
+
+/* Form container */
+.form-container {
+  max-width: 600px;
+  background: white;
+  margin: 50px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c24d2c;
+  font-size: 28px;
+}
+
+/* Form styling */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #1a2639;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Option group styling */
+#options-section {
+  margin-top: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.option input[type="text"] {
+  flex: 1;
+}
+
+.option label {
+  font-weight: normal;
+}
+
+/* Add option button */
+#add-option-btn {
+  background: transparent;
+  color: #c24d2c;
+  border: 1px dashed #c24d2c;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#add-option-btn:hover {
+  background-color: #f6d8d3;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background-color: #c24d2c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #b54323;
+}
+
+/* Success or error message */
+#message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Back link */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #c24d2c;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Icon spacing */
+i {
+  margin-right: 6px;
+}

@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Question</title>
+  <link rel="stylesheet" href="{% static 'css/add_question_form.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"/>
+  <meta name="csrf-token" content="{{ csrf_token }}">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><i class="fa-solid fa-calendar-days"></i> Take your Quiz</div>
+  <ul class="nav-links">
+    <li><a href="{% url 'teachers_quizzes_page' %}"><i class="fa-solid fa-paper-plane"></i> All Quizzes</a></li>
+    <li><a href="{% url 'register_page' %}">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="form-container">
+  <h1>Add New Question</h1>
+  <form id="add-question-form">
+    <label>Question Text</label>
+    <input type="text" name="text" required>
+
+    <label>Type</label>
+    <select name="type" id="question-type" required>
+      <option value="mcq">Multiple Choice</option>
+      <option value="t_f">True/False</option>
+      <option value="written">Written</option>
+    </select>
+
+    <label>Points</label>
+    <input type="number" name="points" min="1" required>
+
+    <label>Correct Answer</label>
+    <input type="text" name="correct_answer" required>
+
+    <div id="options-section">
+      <label>Options</label>
+      <div class="option">
+        <input type="text" name="option_text_1" placeholder="Option 1">
+        <label><input type="checkbox" name="option_correct_1"> Correct</label>
+      </div>
+      <div class="option">
+        <input type="text" name="option_text_2" placeholder="Option 2">
+        <label><input type="checkbox" name="option_correct_2"> Correct</label>
+      </div>
+      <button type="button" id="add-option-btn">+ Add Option</button>
+    </div>
+
+    <button type="submit">Add Question</button>
+  </form>
+  <p id="message"></p>
+  <a href="/app/teacherQuizzesPage/"><i class="fa-solid fa-backward"></i>Back to Quizzes</a>
+</div>
+
+    <script src="{% static 'JS/add_questions_form.js' %}"></script>
+</body>
+</html>

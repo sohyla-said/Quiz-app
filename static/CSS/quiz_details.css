@@ -1,0 +1,171 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #d9dad7;
+    margin: 0;
+    padding: 0;
+    color: #1a2639;
+}
+
+.navbar {
+    background-color: #3e4a61;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 20px;
+}
+
+
+.navbar a:hover {
+    color: #d9eaff;
+}
+
+/* quiz container */
+#quiz-details {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
+/* quiz heading */
+#quiz-name {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1a2639;
+}
+
+/* quiz details text */
+#quiz-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+
+
+/* Removing message */
+#removing-msg {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+/* Back link */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #c24d2c;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i{
+    margin-right: 5px;
+}
+/* Questions List */
+#quiz-questions {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Each question item */
+.question-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+/* Question text */
+.question-item p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* Question type and points */
+.type, .points {
+  font-size: 14px;
+  color: #777;
+  margin-left: 8px;
+}
+
+/* MCQ options */
+.options {
+  list-style-type: lower-alpha;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.options li {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Highlight correct answer */
+.options li::marker {
+  font-weight: bold;
+  color: #c24d2c;
+}
+
+.options li.correct {
+  font-weight: bold;
+  color: green;
+}
+
+/* Remove button for question */
+.remove-btn {
+  background-color: #e04a3f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.remove-btn:hover {
+  background-color: #bb352b;
+}
+
+.remove-btn i {
+  margin-right: 5px;
+}

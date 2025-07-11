@@ -1,0 +1,142 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #d9dad7;
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar {
+    background-color: #3e4a61;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 20px;
+}
+
+
+.navbar a:hover {
+    color: #d9eaff;
+}
+
+.container {
+  background: #fff;
+  padding: 5rem 5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #c24d2c;
+}
+
+
+.input-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+
+}
+
+.input-group i{
+    color: #1a2639;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 1.5rem;
+  color: #333;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.register-button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #c24d2c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.register-button:hover {
+  background: #be674f;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #1a2639;
+  font-size: 18px;
+}
+
+.login-link a {
+  color: #1a2639;
+  text-decoration: none;
+}
+
+.login-link:hover, .login-link a:hover {
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+}
+.login-link a i{
+    margin-left: 5px;
+}
+
+#register-msg{
+    /* color: #357ABD; */
+    transition: all 0.3s;
+    font-size: 18px;
+    text-align: center;
+}
